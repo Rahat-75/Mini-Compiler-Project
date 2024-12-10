@@ -2,13 +2,13 @@
 using namespace std;
 
 void showWelcome() {
-    cout << "\t\t\t\t----------------------------------------------------\n\n";
-    cout << "\t\t\t\t\t    Welcome to Mini Compiler\n\n";
-    cout << "\t\t\t\t\t        HAPPY Compiling\n\n";
-    cout << "\t\t\t\t----------------------------------------------------\n\n";
-    cout << "\t\t\t\t\tPresented by,\n";
-    cout << "\t\t\t\t\tMd. Abdul Rabbi Rahat 213-15-4583\n";
-    cout << "\t\t\t\t\tMehedi Hasan Salman 213-15-4523\n";
+    cout << "\t\t\t\t\t\t----------------------------------------------------\n\n";
+    cout << "\t\t\t\t\t\t\t    Welcome to Mini Compiler\n\n";
+    cout << "\t\t\t\t\t\t\t        HAPPY Compiling\n\n";
+    cout << "\t\t\t\t\t\t----------------------------------------------------\n\n";
+    cout << "\t\t\t\t\t\t\tPresented by,\n";
+    cout << "\t\t\t\t\t\t\tMd. Abdul Rabbi Rahat 213-15-4583\n";
+    cout << "\t\t\t\t\t\t\tMehedi Hasan Salman 213-15-4523\n\n";
 }
 
 void showMenu(){
