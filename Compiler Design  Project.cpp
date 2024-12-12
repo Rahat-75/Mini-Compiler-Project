@@ -1,15 +1,49 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Function to display the login prompt
+bool login() {
+    string username, password;
+    int attempts = 3; // Allow up to 3 attempts
+
+    while (attempts--) {
+        cout << "\t\t\t\t\t\t--------------------------------------------\n\n";
+        cout << "\t\t\t\t\t\t            Login to Mini Compiler         \n\n";
+        cout << "\t\t\t\t\t\t--------------------------------------------\n\n";
+
+        cout << "\t\t\t\t\t\tUsername: ";
+        cin >> username;
+        cout << "\t\t\t\t\t\tPassword: ";
+        cin >> password;
+
+        if (username == "admin" && password == "admin1234") {
+            cout << "\n\t\t\t\t\t\tLogin Successful!\n\n\n\n\n";
+            return true;
+        } else {
+            cout << "\n\t\t\t\t\t\tInvalid username or password. Try again.\n\n";
+        }
+    }
+
+    cout << "\n\t\t\t\t\t\tToo many failed attempts. Exiting program.\n\n";
+    return false;
+}
+
+// Function to display the welcome message with names and IDs
+
 void showWelcome() {
     cout << "\t\t\t\t\t\t----------------------------------------------------\n\n";
     cout << "\t\t\t\t\t\t\t    Welcome to Mini Compiler\n\n";
     cout << "\t\t\t\t\t\t\t        HAPPY Compiling\n\n";
     cout << "\t\t\t\t\t\t----------------------------------------------------\n\n";
-    cout << "\t\t\t\t\t\t\tPresented by,\n";
-    cout << "\t\t\t\t\t\t\tMd. Abdul Rabbi Rahat 213-15-4583\n";
-    cout << "\t\t\t\t\t\t\tMehedi Hasan Salman 213-15-4523\n\n";
+    cout << "\t\t\t\t\t\tPresented by,\n";
+    cout << "\t\t\t\t\t\tMd. Abdul Rabbi Rahat 213-15-4583\n";
+    cout << "\t\t\t\t\t\tMehedi Hasan Salman 213-15-4523\n";
+    cout << "\t\t\t\t\t\tAshab Rahman 213-15-4479\n";
+    cout << "\t\t\t\t\t\tRidoun Hossain Gaddafi 213-15-4627\n";
+    cout << "\t\t\t\t\t\tSarmin Rahman Mim 213-15-4594\n\n";
 }
+
+// Function to display the options menu
 
 void showMenu(){
     cout << "\nSelect an option:\n";
@@ -728,6 +762,11 @@ int main() {
     int choice;
     char tryAgain;
 
+    // Perform login before proceeding
+    if (!login()) {
+        return 0;
+    }
+    // Show the welcome message once
     showWelcome();
 
     while (true) {
@@ -810,5 +849,3 @@ int main() {
     }
     return 0;
 }
-
-//©This Project was done by Md. Abdul Rabbi Rahat & Mehedi Hasan Salman of Daffodil International University//
